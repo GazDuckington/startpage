@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" typr="image/x-icon" href="assets/favicon.ico" />
+    <title>Start Page</title>
+  </head>
+  <body class="center">
+    <div class="content-box">
+      <div class="current-date">
+        <p>Today is <span id="date"></span>.</p>
+      </div>
+      <div class="greet-box">
+        <div class="greeting">
+          <p>
+            <span id="greeter"></span>
+            <span id="username"></span>.
+          </p>
+        </div>
+        <div class="time">
+          <p id="clock"></p>
+        </div>
+      </div>
+      <div id="bookmarks"></div>
+    </div>
+
+    <!-- import js here -->
+    <script type="module" src="./js/clock.js"></script>
+    <script type="module" src="./js/greeting.js"></script>
+    <script type="module" src="./js/bookmarks.js"></script>
+  </body>
+</html>

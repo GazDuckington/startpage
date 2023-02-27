@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #181825;
+  color: #cdd6f4;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.greet-box {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.greet-box .greeting {
+  display: flex;
+}
+
+#date,
+#clock,
+#username {
+  color: #89b4fa;
+}
+
+.current-date {
+  margin-bottom: 5px;
+}
+
+#bookmarks {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+a.card {
+  width: 9em;
+  height: 9em;
+  padding: 1em;
+  background-color: #11111b;
+  text-decoration: none;
+  color: #b4befe;
+  border: solid 2px #1e1e2e;
+  border-radius: 5px;
+}
+a.card p.desc {
+  font-size: 1.25rem;
+  display: none;
+  overflow-wrap: anywhere;
+}
+a.card:hover {
+  color: #89b4fa;
+  border: solid 2px #89b4fa;
+}
+a.card:hover h1 {
+  display: none;
+}
+a.card:hover p.desc {
+  display: block;
+}
+
+@media (min-width: 200px) {
+  body {
+    padding: 50px;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #bookmarks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #bookmarks a.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    padding: 0px;
+    margin-top: 70px;
+  }
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #bookmarks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+  #bookmarks {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
