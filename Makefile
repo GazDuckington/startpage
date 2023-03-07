@@ -6,4 +6,5 @@ sass:
 
 local:
 	make -j 2 serve sass
+
 .PHONY: local
